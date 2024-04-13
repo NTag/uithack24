@@ -4,7 +4,8 @@ import styled from "styled-components";
 export const Title = styled.h1`
   text-align: center;
   margin: 32px 16px;
-  font-weight: bold;
+  font-style: italic;
+  font-weight: 300;
 `;
 
 export const Subtitle = styled.h3`
