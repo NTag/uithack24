@@ -1,5 +1,7 @@
 import * as S from "./styles";
 
+import { Icon } from "../Icon";
+
 export const Button = ({ children, to, icon, color, size, onClick }) => (
   <S.Container
     to={to}
@@ -9,15 +11,6 @@ export const Button = ({ children, to, icon, color, size, onClick }) => (
     onClick={onClick}
   >
     {children}
-    {icon ? (
-      <img
-        src={`data:image/svg+xml;utf8,${encodeURIComponent(
-          icon.replace(
-            /currentColor/g,
-            getComputedStyle(document.body).getPropertyValue(`--color-${color}`)
-          )
-        )}`}
-      />
-    ) : null}
+    {icon ? <Icon svg={icon} color={color} size={26} /> : null}
   </S.Container>
 );
