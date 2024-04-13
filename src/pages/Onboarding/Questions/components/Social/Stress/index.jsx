@@ -1,24 +1,24 @@
 import * as S from "./styles";
 
+import { Button } from "../../../../../../components/Button";
 import { Step } from "../../Step";
 
 export const QuestionsSocialStepStress = () => {
   return (
-    <Step title="How stress the idea to talk to someone new creates?">
+    <Step title="How hard is it for you to meet new people?">
       <S.Options>
-        <input
-          type="range"
-          id="stress"
-          name="stress"
-          min="0"
-          max="20"
-          defaultValue="10"
-        />
-        <S.Legend>
-          <span>no stress at all</span>
-          <span>I’m almost fainting</span>
-        </S.Legend>
-        <S.Submit to="/onboarding/social/2">Submit →</S.Submit>
+        <Button to="/onboarding/social/2" color="green" size="small">
+          Easy
+        </Button>
+        <Button to="/onboarding/social/2" color="yellow" size="small">
+          Moderate
+        </Button>
+        <Button to="/onboarding/social/2" color="pink" size="small">
+          Hard
+        </Button>
+        <Button to="/onboarding/social/2" color="purple" size="small">
+          Impossible
+        </Button>
       </S.Options>
     </Step>
   );
