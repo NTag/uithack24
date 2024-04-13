@@ -8,6 +8,7 @@ export const Card = styled.div`
   max-width: 350px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
+  background: var(--color-dark-black);
 `;
 
 export const Header = styled.h1`
@@ -38,7 +39,7 @@ export const Options = styled.div`
   justify-content: space-between;
 `;
 
-export const OptionContainer = styled.div`
+export const OptionContainer = styled.button`
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -50,7 +51,7 @@ export const Option = styled.div`
   border: 1px solid;
   border-color: var(--color-${({ $color }) => $color});
   color: var(--color-${({ $color }) => $color});
-`
+`;
 
 export const Bonus = styled.div`
   color: var(--color-${({ $color }) => $color});

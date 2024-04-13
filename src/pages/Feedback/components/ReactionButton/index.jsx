@@ -4,6 +4,7 @@ import {
   getChallenge,
   getChallenges,
   removeChallenge,
+  setChallenges,
   setNextChallengeDate,
 } from "../../../../services/storage";
 
@@ -17,6 +18,7 @@ export const ReactionButton = ({ icon, color, text }) => {
     const challenge = getChallenge();
     const challenges = getChallenges();
     challenges.push(challenge);
+    setChallenges(challenges);
     removeChallenge();
     setNextChallengeDate();
     history.push("/dashboard");

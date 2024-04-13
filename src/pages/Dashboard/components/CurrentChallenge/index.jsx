@@ -27,7 +27,7 @@ export const CurrentChallenge = () => {
       );
     }
 
-    return <S.Button to="/challenges/challenge1">New challenge</S.Button>;
+    return <S.Button to="/challenges/socialEasy">New challenge</S.Button>;
   }
 
   const minutesRemaining = Math.max(

@@ -1,4 +1,4 @@
-import { addMinutes } from "date-fns";
+import { addHours, addMinutes } from "date-fns";
 
 const ONBOARDING_ANSWERS_JEY = "onboardingAnswers";
 const CHALLENGES_KEY = "challenges";
@@ -48,6 +48,6 @@ export const getNextChallengeDate = () => {
 };
 
 export const setNextChallengeDate = () => {
-  const nextDate = addMinutes(new Date(), 30 + Math.ceil(Math.random() * 30));
+  const nextDate = addHours(new Date(), 2 + Math.ceil(Math.random() * 20));
   localStorage.setItem(NEXT_CHALLENGE_DATE_KEY, nextDate.toISOString());
 };

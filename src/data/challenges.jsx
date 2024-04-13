@@ -1,7 +1,15 @@
 export const CHALLENGES = {
-  challenge1: {
-    text: "Challenge 1",
+  socialEasy: {
+    id: "socialEasy",
     title: "Mirror Challenge",
-    options: [{ text: 'Smile at yourself' }, { text: 'Say "I love you"', bonus: '+5 self-love points' }]
+    durationMinutes: 35,
+    options: [
+      { text: "Smile at yourself", summary: "Smile at yourself in the mirror" },
+      {
+        text: 'Say "I love you"',
+        bonus: "+5 self-love points",
+        summary: 'Say "I love you" to the mirror',
+      },
+    ],
   },
 };

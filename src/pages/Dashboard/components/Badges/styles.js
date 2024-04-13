@@ -15,6 +15,6 @@ export const Badges = styled.div`
 `;
 
 export const Image = styled.img`
-  ${({ isUnlocked }) =>
-    isUnlocked ? "" : "filter: grayscale(100%) brightness(0.5)"};
+  ${({ $isUnlocked }) =>
+    $isUnlocked ? "" : "filter: grayscale(100%) brightness(0.5)"};
 `;
