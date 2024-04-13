@@ -73,3 +73,8 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+#root {
+  max-width: 500px;
+  margin: 0 auto;
+}
