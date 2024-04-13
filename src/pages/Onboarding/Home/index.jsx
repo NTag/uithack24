@@ -7,7 +7,7 @@ export const OnboardingHomePage = () => {
 
   return (
     <>
-      <S.Title>Welcome to Challenger25!</S.Title>
+      <S.Title>Welcome to Challenger5!</S.Title>
       <S.Subtitle>On what do you want to work on?</S.Subtitle>
       <S.Categories>
         <S.Category to="/onboarding/social/0">
