@@ -1,9 +1,20 @@
+import React, { useState } from 'react';
 import * as S from "./styles";
 
 import { CHALLENGES } from "../../data/challenges";
 import { useParams } from "react-router-dom";
 
+import { ChallengeCard } from "../../components/ChallengeCard";
+
+
+
 export const ChallengePage = () => {
+  const [isVisible, setIsVisible] = useState(true);
+
+  const close = () => {
+    setIsVisible(false);
+  };
+
   const params = useParams();
   const challenge = CHALLENGES[params.id];
   if (!challenge) {
@@ -12,7 +23,9 @@ export const ChallengePage = () => {
 
   return (
     <S.Container>
-      <h1>{challenge.text}</h1>
+      {isVisible && (
+        <ChallengeCard challenge={challenge} onClick={close}/>
+      )}
     </S.Container>
   );
 };
