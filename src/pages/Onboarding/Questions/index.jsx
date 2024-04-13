@@ -1,15 +1,10 @@
 import * as S from "./styles";
 
-import { QuestionsSocialStepFocus } from "./components/Social/Focus";
 import { QuestionsSocialStepStress } from "./components/Social/Stress";
 import { QuestionsSocialStepTime } from "./components/Social/Time";
 import { useParams } from "react-router-dom";
 
-const steps = [
-  QuestionsSocialStepTime,
-  QuestionsSocialStepStress,
-  QuestionsSocialStepFocus,
-];
+const steps = [QuestionsSocialStepTime, QuestionsSocialStepStress];
 
 export const OnboardingQuestionsPage = () => {
   const params = useParams();
