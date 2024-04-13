@@ -9,6 +9,14 @@ export const getOnboardingAnswers = () => {
   return JSON.parse(localStorage.getItem(ONBOARDING_ANSWERS_JEY) || "{}");
 };
 
+export const getOnboardingScore = () => {
+  const answers = getOnboardingAnswers();
+  return Object.values(answers).reduce(
+    (acc, answer) => acc + parseInt(answer, 10),
+    0
+  );
+};
+
 export const setOnboardingAnswer = (questionId, answer) => {
   const onboardingAnswers = getOnboardingAnswers();
   onboardingAnswers[questionId] = answer;

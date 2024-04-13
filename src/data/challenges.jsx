@@ -12,4 +12,17 @@ export const CHALLENGES = {
       },
     ],
   },
+  socialMedium: {
+    id: "socialMedium",
+    title: "Going out challenge",
+    durationMinutes: 2 * 48 * 60,
+    options: [
+      { text: "Go for a 10 min walk", summary: "Go for a 10-min walk" },
+      {
+        text: "Go to the cinema",
+        bonus: "+10 social points",
+        summary: "Go to the cinema by yourself",
+      },
+    ],
+  },
 };

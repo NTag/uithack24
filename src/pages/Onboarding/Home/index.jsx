@@ -15,11 +15,11 @@ export const OnboardingHomePage = () => {
         <Button to="/onboarding/social/0" icon={eye} color="purple">
           Social anxiety
         </Button>
-        <Button to="/onboarding/refugee/0" icon={heart} color="pink">
+        <Button icon={heart} color="pink">
           Relationships
         </Button>
-        <Button to="/onboarding/relationships/0" icon={house} color="yellow">
-          Immigration
+        <Button icon={house} color="yellow">
+          Queer adaptation
         </Button>
       </S.Categories>
     </>
