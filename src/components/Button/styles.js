@@ -12,4 +12,5 @@ export const Container = styled(Link)`
   color: var(--color-${({ $color }) => $color});
   border-radius: 8px;
   text-align: center;
+  background: var(--color-dark-black);
 `;

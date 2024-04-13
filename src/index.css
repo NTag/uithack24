@@ -64,6 +64,11 @@ button {
 }
 
 body {
-  background: var(--color-dark-black);
+  background-color: var(--color-dark-black);
   color: white;
+  background-image: url(./assets/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
