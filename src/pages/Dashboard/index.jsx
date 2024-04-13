@@ -1,5 +1,6 @@
 import * as S from "./styles";
 
+import { CurrentChallenge } from "./components/CurrentChallenge";
 import { getChallenges } from "../../services/storage";
 
 export const DashboardPage = () => {
@@ -12,7 +13,7 @@ export const DashboardPage = () => {
           <div>{challenges.length || "0"}</div>
           <span>challenges</span>
         </S.HeadChallenges>
-        <S.HeadChallenge></S.HeadChallenge>
+        <CurrentChallenge />
       </S.Head>
     </S.Container>
   );

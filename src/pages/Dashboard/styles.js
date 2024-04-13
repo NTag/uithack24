@@ -10,7 +10,8 @@ export const Head = styled.div`
 
   gap: 16px;
 
-  & > div {
+  & > div,
+  & > button {
     flex: 1;
   }
 `;
@@ -25,11 +26,4 @@ export const HeadChallenges = styled.div`
     font-weight: bold;
     font-size: 40px;
   }
-`;
-
-export const HeadChallenge = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: space-between;
 `;
