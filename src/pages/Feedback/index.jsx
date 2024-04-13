@@ -1,10 +1,10 @@
 import * as S from "./styles";
 
-import { CHALLENGES } from "../../data/challenges";
-import { useParams } from "react-router-dom";
+import { faceFrowning, faceSmiling } from "pepicons/pop";
 
-import { faceSmiling, faceFrowning } from "pepicons/pop";
-import { ReactionButton } from "../../components/ReactionButton";
+import { CHALLENGES } from "../../data/challenges";
+import { ReactionButton } from "./components/ReactionButton";
+import { useParams } from "react-router-dom";
 
 export const FeedbackPage = () => {
   const params = useParams();
@@ -18,10 +18,14 @@ export const FeedbackPage = () => {
       <S.Header>How was it?</S.Header>
 
       <S.ReactionsGrid>
-        <ReactionButton color="green" icon={faceSmiling} text="Great"/>
-        <ReactionButton color="purple" icon={faceFrowning} text="Couldn’t do it"/>
-        <ReactionButton color="yellow" icon={faceSmiling} text="Good"/>
-        <ReactionButton color="pink" icon={faceSmiling} text="Ok"/>
+        <ReactionButton color="green" icon={faceSmiling} text="Great" />
+        <ReactionButton
+          color="purple"
+          icon={faceFrowning}
+          text="Couldn’t do it"
+        />
+        <ReactionButton color="yellow" icon={faceSmiling} text="Good" />
+        <ReactionButton color="pink" icon={faceSmiling} text="Ok" />
       </S.ReactionsGrid>
     </S.Container>
   );
