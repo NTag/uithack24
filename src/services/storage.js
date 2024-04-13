@@ -1,3 +1,5 @@
+import { addMinutes } from "date-fns";
+
 const ONBOARDING_ANSWERS_JEY = "onboardingAnswers";
 const CHALLENGES_KEY = "challenges";
 const CHALLENGE_KEY = "challenge";
@@ -17,7 +19,7 @@ export const setOnboardingAnswer = (questionId, answer) => {
 };
 
 export const getChallenges = () => {
-  return JSON.parse(localStorage.getItem(CHALLENGES_KEY) || "{}");
+  return JSON.parse(localStorage.getItem(CHALLENGES_KEY) || "[]");
 };
 
 export const setChallenges = (challenges) => {
@@ -36,7 +38,16 @@ export const setChallenge = (challenge) => {
   localStorage.setItem(CHALLENGE_KEY, JSON.stringify(challenge));
 };
 
+export const removeChallenge = () => {
+  localStorage.removeItem(CHALLENGE_KEY);
+};
+
 export const getNextChallengeDate = () => {
   const value = localStorage.getItem(NEXT_CHALLENGE_DATE_KEY);
   return value ? new Date(value) : null;
+};
+
+export const setNextChallengeDate = () => {
+  const nextDate = addMinutes(new Date(), 30 + Math.ceil(Math.random() * 30));
+  localStorage.setItem(NEXT_CHALLENGE_DATE_KEY, nextDate.toISOString());
 };

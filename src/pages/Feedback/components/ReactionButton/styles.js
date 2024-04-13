@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ReactionContainer = styled.div`
+export const ReactionContainer = styled.button`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

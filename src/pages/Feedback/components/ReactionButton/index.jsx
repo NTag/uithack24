@@ -1,10 +1,31 @@
 import * as S from "./styles";
 
-import { Icon } from "../../../../components/Icon";
+import {
+  getChallenge,
+  getChallenges,
+  removeChallenge,
+  setNextChallengeDate,
+} from "../../../../services/storage";
 
-export const ReactionButton = ({ icon, color, text }) => (
-  <S.ReactionContainer>
-    <Icon svg={icon} color={color} size={60} />
-    {text}
-  </S.ReactionContainer>
-);
+import { Icon } from "../../../../components/Icon";
+import { useHistory } from "react-router-dom";
+
+export const ReactionButton = ({ icon, color, text }) => {
+  const history = useHistory();
+
+  const onClick = () => {
+    const challenge = getChallenge();
+    const challenges = getChallenges();
+    challenges.push(challenge);
+    removeChallenge();
+    setNextChallengeDate();
+    history.push("/dashboard");
+  };
+
+  return (
+    <S.ReactionContainer onClick={onClick}>
+      <Icon svg={icon} color={color} size={60} />
+      {text}
+    </S.ReactionContainer>
+  );
+};
