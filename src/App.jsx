@@ -1,4 +1,4 @@
-import "./App.css";
+import * as S from "./App.styles";
 
 import { useState } from "react";
 
@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-      <h1>Challenger5</h1>
+      <S.Title>Welcome to Challenger25!</S.Title>
     </>
   );
 }
