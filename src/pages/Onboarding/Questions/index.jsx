@@ -22,7 +22,6 @@ export const OnboardingQuestionsPage = () => {
 
   return (
     <S.Container>
-      Onboarding {params.category} questions
       <Step />
     </S.Container>
   );
