@@ -10,9 +10,15 @@ export const OnboardingHomePage = () => {
       <S.Title>Welcome to Challenger25!</S.Title>
       <S.Subtitle>On what do you want to work on?</S.Subtitle>
       <S.Categories>
-        <S.Category>Social anxiety, coming out…</S.Category>
-        <S.Category>Leaving home, adaptation…</S.Category>
-        <S.Category>Love & relationships</S.Category>
+        <S.Category to="/onboarding/social">
+          Social anxiety, coming out…
+        </S.Category>
+        <S.Category to="/onboarding/refugee">
+          Leaving home, adaptation…
+        </S.Category>
+        <S.Category to="/onboarding/relationships">
+          Love & relationships
+        </S.Category>
       </S.Categories>
     </>
   );

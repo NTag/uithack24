@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Title = styled.h1`
@@ -19,7 +20,7 @@ export const Categories = styled.div`
   gap: 16px;
 `;
 
-export const Category = styled.button`
+export const Category = styled(Link)`
   border: 2px solid black;
   padding: 8px 16px;
   text-align: center;
