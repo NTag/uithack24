@@ -21,7 +21,7 @@ export const CurrentChallenge = () => {
     }
 
     const onboardingScore = getOnboardingScore();
-    return onboardingScore < 2 ? "socialEasy" : "socialMedium";
+    return onboardingScore < 2 ? "socialEasy" : "socialHard";
   };
 
   if (!challenge) {
@@ -51,16 +51,25 @@ export const CurrentChallenge = () => {
     differenceInMinutes(new Date(challenge.endDate), new Date())
   );
   const hoursRemaining = Math.ceil(minutesRemaining / 60);
+  const daysRemaining = Math.ceil(hoursRemaining / 24);
+
+  const getTimeRemaining = () => {
+    if (daysRemaining > 1) {
+      return `${daysRemaining}d`;
+    }
+
+    if (hoursRemaining > 1) {
+      return `${hoursRemaining}h`;
+    }
+
+    return `${minutesRemaining}min`;
+  };
 
   return (
     <S.Container>
       <div>
         <S.Row>
-          <h1>
-            {hoursRemaining > 1
-              ? `${hoursRemaining}h`
-              : `${minutesRemaining}min`}
-          </h1>
+          <h1>{getTimeRemaining()}</h1>
           <Icon svg={clock} color="yellow" size="30" />
         </S.Row>
         <div>{challenge.summary}</div>

@@ -25,4 +25,17 @@ export const CHALLENGES = {
       },
     ],
   },
+  socialHard: {
+    id: "socialHard",
+    title: "Talk to a stranger",
+    durationMinutes: 7 * 24 * 60,
+    options: [
+      { text: "Ask for directions", summary: "Ask a stranger for directions" },
+      {
+        text: "Small talk",
+        bonus: "+15 social points",
+        summary: "Have a small talk with a stranger",
+      },
+    ],
+  },
 };

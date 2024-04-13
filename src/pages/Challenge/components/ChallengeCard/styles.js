@@ -35,14 +35,13 @@ export const CloseIcon = styled.svg`
 export const Options = styled.div`
   display: flex;
   gap: 16px;
-  flex-wrap: nowrap;
-  justify-content: space-between;
 `;
 
 export const OptionContainer = styled.button`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: 1;
 `;
 
 export const Option = styled.div`
@@ -51,6 +50,7 @@ export const Option = styled.div`
   border: 1px solid;
   border-color: var(--color-${({ $color }) => $color});
   color: var(--color-${({ $color }) => $color});
+  width: 100%;
 `;
 
 export const Bonus = styled.div`

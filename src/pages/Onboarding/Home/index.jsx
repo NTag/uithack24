@@ -19,7 +19,7 @@ export const OnboardingHomePage = () => {
           Relationships
         </Button>
         <Button icon={house} color="yellow">
-          Queer adaptation
+          Culture adaptation
         </Button>
       </S.Categories>
     </>
