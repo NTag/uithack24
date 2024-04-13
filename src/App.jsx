@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/onboarding/:category">
+        <Route path="/onboarding/:category/:step">
           <OnboardingQuestionsPage />
         </Route>
         <Route path="/challenges/:id">
