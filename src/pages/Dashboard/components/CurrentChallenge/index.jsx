@@ -21,7 +21,7 @@ export const CurrentChallenge = () => {
     }
 
     const onboardingScore = getOnboardingScore();
-    return onboardingScore < 2 ? "socialEasy" : "socialHard";
+    return onboardingScore <= 2 ? "socialEasy" : "socialHard";
   };
 
   if (!challenge) {
