@@ -59,3 +59,7 @@ export const setNextChallengeDate = () => {
   const nextDate = addHours(new Date(), 2 + Math.ceil(Math.random() * 20));
   localStorage.setItem(NEXT_CHALLENGE_DATE_KEY, nextDate.toISOString());
 };
+
+export const removeNextChallengeDate = () => {
+  localStorage.removeItem(NEXT_CHALLENGE_DATE_KEY);
+};
