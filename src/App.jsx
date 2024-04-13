@@ -11,7 +11,7 @@ export default function App() {
         <Route path="/onboarding/:category">
           <OnboardingQuestionsPage />
         </Route>
-        <Route path="/challenge/:id">
+        <Route path="/challenges/:id">
           <ChallengePage />
         </Route>
         <Route path="/">
