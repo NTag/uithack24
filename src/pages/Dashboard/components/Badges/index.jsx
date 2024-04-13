@@ -50,7 +50,13 @@ export const Badges = () => {
     location.reload();
   };
   const goToTheEnd = () => {
-    setChallenges([{}, {}, {}, {}, {}]);
+    setChallenges([
+      { summary: 'Say "I love you" to the mirror' },
+      { summary: "Go for a 10-min walk" },
+      { summary: "Ask a stranger for directions" },
+      { summary: "Have a small talk with a stranger" },
+      { summary: "Go to a networking event" },
+    ]);
     location.reload();
   };
 

@@ -2,6 +2,7 @@ import * as S from "./styles";
 
 import { Badges } from "./components/Badges";
 import { CurrentChallenge } from "./components/CurrentChallenge";
+import { Timeline } from "./components/Timeline";
 import { getChallenges } from "../../services/storage";
 
 export const DashboardPage = () => {
@@ -17,6 +18,7 @@ export const DashboardPage = () => {
         <CurrentChallenge />
       </S.Head>
       <Badges />
+      <Timeline />
     </S.Container>
   );
 };
