@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 `;
 
 export const Head = styled.div`

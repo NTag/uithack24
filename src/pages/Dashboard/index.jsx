@@ -1,5 +1,6 @@
 import * as S from "./styles";
 
+import { Badges } from "./components/Badges";
 import { CurrentChallenge } from "./components/CurrentChallenge";
 import { getChallenges } from "../../services/storage";
 
@@ -15,6 +16,7 @@ export const DashboardPage = () => {
         </S.HeadChallenges>
         <CurrentChallenge />
       </S.Head>
+      <Badges />
     </S.Container>
   );
 };
