@@ -1,4 +1,4 @@
-# UITHack — Challenger5
+# UITHack — QueesQuest — Team Challenger5
 
 You need NodeJS 20 and NPM.
 
