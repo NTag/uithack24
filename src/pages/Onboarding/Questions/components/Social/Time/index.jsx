@@ -27,7 +27,7 @@ export const QuestionsSocialStepTime = () => {
           size="small"
           onClick={onSave(1)}
         >
-          More than a month ago
+          Within a year
         </Button>
         <Button
           to="/onboarding/social/1"
@@ -35,7 +35,7 @@ export const QuestionsSocialStepTime = () => {
           size="small"
           onClick={onSave(2)}
         >
-          More than a week ago
+          Within a month
         </Button>
         <Button
           to="/onboarding/social/1"
@@ -43,7 +43,7 @@ export const QuestionsSocialStepTime = () => {
           size="small"
           onClick={onSave(3)}
         >
-          Last week
+          Within a week
         </Button>
       </S.Options>
     </Step>
