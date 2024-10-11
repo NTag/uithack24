@@ -56,6 +56,8 @@ const PhoneContainer = styled.div`
   border: 8px solid white;
   border-radius: 48px;
   width: 450px;
+
+  overflow-y: scroll;
 `;
 
 const DemoContainer = styled.div`
