@@ -70,6 +70,10 @@ const DemoContainer = styled.div`
     font-size: 24px;
     text-decoration: underline;
   }
+
+  & > p {
+    margin-top: 64px;
+  }
 `;
 
 const ImgTitle = styled.img`
@@ -95,6 +99,12 @@ export default function App() {
         <h3>www.queerquest.ovh</h3>
         <ImgQRCode src={imgConnect} alt="Connect to QueerQuest" />
         <h4>Let’s connect!</h4>
+        <p>
+          The code is here:{" "}
+          <a href="https://github.com/NTag/uithack24" target="_blank">
+            https://github.com/NTag/uithack24
+          </a>
+        </p>
       </DemoContainer>
       <PhoneContainer>
         <Nav />
